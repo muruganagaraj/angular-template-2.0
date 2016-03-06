@@ -2,14 +2,14 @@ import {Component, OnInit} from 'angular2/core';
 import { Router } from 'angular2/router';
 
 import {Hero} from '../common/hero';
-import {HeroDetailComponent} from './heroDetails/heroDetails.component';
+import {HeroDetailComponent} from '../details/details.component';
 
-import {HeroService} from './heroes.service'
+import {HeroService} from '../common/heroes.service'
 
 @Component({
     selector: 'heroes',
-    templateUrl: 'app/heroes/heroes.html',
-    styleUrls: [`app/heroes/heroes.css`],
+    templateUrl: 'client/modules/heroes/heroes.html',
+    styleUrls: [`client/modules/heroes/heroes.css`],
     directives: [HeroDetailComponent],
     providers: [HeroService]
 })

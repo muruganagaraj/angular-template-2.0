@@ -2,13 +2,13 @@ import { Component, OnInit } from 'angular2/core';
 import { Router } from 'angular2/router';
 
 import { Hero } from '../common/hero';
-import { HeroService } from '../heroes/heroes.service';
+import { HeroService } from '../common/heroes.service';
 
 
 @Component({
     selector: 'dashboard',
-    templateUrl: 'app/dashboard/dashboard.html',
-    styleUrls: [`app/dashboard/dashboard.css`],
+    templateUrl: 'client/modules/dashboard/dashboard.html',
+    styleUrls: [`client/modules/dashboard/dashboard.css`],
     providers: [HeroService]
 })
 

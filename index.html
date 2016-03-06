@@ -18,13 +18,13 @@
     <script>
         System.config({
         packages: {        
-          app: {
+          client: {
             format: 'register',
             defaultExtension: 'js'
           }
         }
       });
-      System.import('app/app')
+      System.import('./client/app')
             .then(null, console.error.bind(console));
     </script>
 </head>
